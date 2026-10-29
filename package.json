@@ -1,0 +1,20 @@
+{
+  "name": "shopify-pazarlama-parcalari",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shopify için sipariş kaynağı takibi (UTM ve reklam tıklaması sepet özelliklerine) ve GA4 özel pikseli.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@shopify/theme-check-node": "3.31.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": "github:eroguls/shopify-pazarlama-parcalari",
+  "author": "Salih Eroğul (https://saliherogul.com)",
+  "license": "MIT"
+}

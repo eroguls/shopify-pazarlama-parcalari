@@ -1,0 +1,5 @@
+extends: theme-check:recommended
+
+# Bu depo bir parça kütüphanesi; parçalar temanıza kopyalandığında çağrılır.
+OrphanedSnippet:
+  enabled: false

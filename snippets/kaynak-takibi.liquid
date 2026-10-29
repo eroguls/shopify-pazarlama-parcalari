@@ -1,0 +1,18 @@
+{% doc %}
+  Sipariş kaynağı takibini yükler. layout/theme.liquid içinde </head> etiketinden önce bir kez
+  çağrılır.
+
+  Ziyaretçinin ilk ve son geldiği kaynak (UTM etiketleri, Google/Meta/TikTok/Microsoft reklam
+  tıklama kimliği ya da yönlendiren site) tarayıcıda saklanır. Sepette ürün varsa sepet
+  özelliklerine yazılır ve siparişin “Ek ayrıntılar” bölümünde görünür.
+
+  Mağazada çerez izni toplanıyorsa betik, Shopify Customer Privacy API’de analiz izni verilene
+  kadar hiçbir şey saklamaz.
+
+  @param {number} [gun] - İlk kaynağın kaç gün korunacağı (varsayılan 90)
+
+  @example
+  {% render 'kaynak-takibi', gun: 90 %}
+{% enddoc %}
+
+<script src="{{ 'kaynak-takibi.js' | asset_url }}" data-gun="{{ gun | default: 90 }}" defer></script>
